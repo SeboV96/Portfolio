@@ -22,7 +22,7 @@
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-ms: 90%;
+    --container-width-sm: 90%;
 }
 
 html {
@@ -38,7 +38,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/dark-blue-textured-background_1845103.png);
+    background-image: url(../src/assets/pngtree-black-texture-lines-texture-background-image_262638.png);
 }
 
 /* ===================== GENERAL STYLES =====================*/
