@@ -35,7 +35,7 @@ const About = () => {
       <article className='about__card'>
       <LuFolders className='about__icon'/>
       <h5>Proyects</h5>
-      <small>10+ completed proyects</small>
+      <small>5+ completed proyects</small>
       </article>
     </div>
 
