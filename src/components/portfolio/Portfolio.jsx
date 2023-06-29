@@ -7,6 +7,31 @@ import IMG3 from '../../assets/tiefling-brujo3.jpg'
 
 
 const Portfolio = () => {
+
+  const data = [
+    {
+      id: 1,
+      image: IMG1,
+      title: 'Henry PEDI-VERY',
+      github: 'https://github.com/SeboV96/PF_HENRY-PEDIVERY',
+      demo: "https://www.linkedin.com/in/sebastian-villa-develop/"
+    },
+    {
+      id: 2,
+      image: IMG2,
+      title: 'Pokemon Project',
+      github: "https://github.com/SeboV96/Pokemon-Project",
+      demo: "https://www.linkedin.com/in/sebastian-villa-develop/"
+    },
+    {
+      id: 3,
+      image: IMG3,
+      title: 'TIC-TAC-TOE',
+      github: "https://github.com/SeboV96/TIC-TAC-TOE",
+      demo: "https://www.linkedin.com/in/sebastian-villa-develop/"
+    },
+  ]
+
   return (
     <section id='portfolio'>
       <h5>My recent work</h5>
@@ -14,43 +39,24 @@ const Portfolio = () => {
 
       <div className="container portfolio__container">
 
-        <article className='portfolio__item'>
+        {
+          data.map(({id, image, title, github, demo}) => {
+            return (
+              <article key={id} className='portfolio__item'>
         <div className="portfolio__item-image">
-          <img src={IMG1} alt="" />
+          <img src={image} alt={title} />
         </div>
-          <h3>Henry PEDI-VERY</h3>
+          <h3>{title}</h3>
           <div className='portfolio__item-cta'>
-            <a href="https://github.com/SeboV96/PF_HENRY-PEDIVERY" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/in/sebastian-villa-develop/" className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href={github} className='btn' target='_blank'>Github</a>
+          <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
           
         </article>
+            )
+          })
+        }
 
-        <article className='portfolio__item'>
-        <div className="portfolio__item-image">
-          <img src={IMG2} alt="" />
-        </div>
-          <h3>Pokemon Project</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/SeboV96/Pokemon-Project" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/in/sebastian-villa-develop/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-          
-        </article>
-
-        <article className='portfolio__item'>
-        <div className="portfolio__item-image">
-          <img src={IMG3} alt="" />
-        </div>
-          <h3>TIC-TAC-TOE</h3>
-          <div className='portfolio__item-cta'>
-            <a href="https://github.com/SeboV96/TIC-TAC-TOE" className='btn' target='_blank'>Github</a>
-          <a href="https://www.linkedin.com/in/sebastian-villa-develop/" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-          
-        </article>
-
-        
       </div>
     </section>
   )
