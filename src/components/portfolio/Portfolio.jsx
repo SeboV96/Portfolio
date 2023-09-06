@@ -14,14 +14,14 @@ const Portfolio = () => {
       image: IMG1,
       title: 'Henry PEDI-VERY',
       github: 'https://github.com/SeboV96/PF_HENRY-PEDIVERY',
-      demo: "https://www.linkedin.com/in/sebastian-villa-develop/"
+      demo: "https://pf-henry-plum.vercel.app"
     },
     {
       id: 2,
       image: IMG2,
       title: 'Pokemon Project',
       github: "https://github.com/SeboV96/Pokemon-Project",
-      demo: "https://www.linkedin.com/in/sebastian-villa-develop/"
+      demo: "https://pokemon-project-eight.vercel.app/"
     },
     {
       id: 3,
