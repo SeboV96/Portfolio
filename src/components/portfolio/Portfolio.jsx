@@ -28,7 +28,7 @@ const Portfolio = () => {
       image: IMG3,
       title: 'TIC-TAC-TOE',
       github: "https://github.com/SeboV96/TIC-TAC-TOE",
-      demo: "https://www.linkedin.com/in/sebastian-villa-develop/"
+      demo: "tic-tac-toe-one-ruddy.vercel.app"
     },
   ]
 
