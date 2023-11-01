@@ -3,6 +3,7 @@ import './portfolio.css'
 // import IMG1 from '../../assets/tiefling-brujo.jpg'
 import IMG2 from '../../assets/Pokeapp.jpg'
 import IMG3 from '../../assets/Screenshot_1.jpg'
+import IMG4 from '../../assets/netflix-clone.jpg'
 
 
 
@@ -29,6 +30,13 @@ const Portfolio = () => {
       title: 'TIC-TAC-TOE',
       github: "https://github.com/SeboV96/TIC-TAC-TOE",
       demo: "https://tic-tac-toe-one-ruddy.vercel.app"
+    },
+    {
+      id: 4,
+      image: IMG4,
+      title: 'Netflix-Clone',
+      github: "https://github.com/SeboV96/Netflix-clone",
+      demo: "https://github.com/SeboV96/Netflix-clone"
     },
   ]
 
