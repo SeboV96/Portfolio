@@ -1,0 +1,124 @@
+{
+  "header": {
+    "greeting": "¡Hola! Soy",
+    "name": "Sebastian Villa",
+    "title": "Desarrollador Full Stack",
+    "scrollDown": "Desplázate hacia abajo"
+  },
+  "about": {
+    "subtitle": "Conóceme",
+    "title": "Acerca de Mí",
+    "experience": "Experiencia",
+    "experienceText": "2.5 años de experiencia en IT",
+    "clients": "Clientes",
+    "clientsText": "Clientes contentos",
+    "projects": "Proyectos",
+    "projectsText": "10+ proyectos completados",
+    "description": "Soy un Desarrollador Full Stack apasionado con 2.5 años de experiencia profesional, especializado en crear soluciones digitales innovadoras. Actualmente trabajo como Freelancer, anteriormente pasé 1 año y 10 meses en \"Compañía Digital\", donde fui fundamental en el desarrollo de la plataforma \"CD-System\" y colaboré en múltiples proyectos web construidos con dicho sistema.\n\nMi experiencia abarca un amplio rango de tecnologías incluyendo:\n• HTML5 • CSS3 • JavaScript (ES6+)\n• Node.js • MySQL • PostgreSQL • MongoDB\n• PHP • Laravel • React • React Native\n• Redux • Express.js • Bootstrap • Metodologías Scrum\n\nAdicionalmente, tengo amplia experiencia en DevOps incluyendo:\n• Despliegue de aplicaciones y configuración de servidores\n• Gestión de dominios y configuración DNS\n• Mantenimiento y monitoreo de servidores\n• Implementación de pipelines CI/CD\n• Gestión de infraestructura en la nube\n\nSoy apasionado por aprovechar la tecnología para resolver problemas complejos y crear experiencias digitales significativas. Mi experiencia tanto en desarrollo frontend como backend, combinada con mis habilidades DevOps y enfoque colaborativo, me permite entregar soluciones de alta calidad que impulsan el éxito empresarial.\n\nSiempre estoy emocionado por asumir nuevos desafíos y contribuir a proyectos innovadores que marquen una diferencia real en la vida de las personas.",
+    "cta": "¡Hablemos!"
+  },
+  "experience": {
+    "subtitle": "Qué habilidades tengo",
+    "title": "Mi Experiencia",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Desarrollo Backend",
+    "experienced": "Experimentado",
+    "intermediate": "Intermedio",
+    "comingSoon": "¡Próximamente!"
+  },
+  "services": {
+    "subtitle": "Lo que ofrezco",
+    "title": "Servicios",
+    "uiux": {
+      "title": "Diseño UI/UX",
+      "features": [
+        "Diseño de interfaces intuitivas y atractivas",
+        "Prototipado y wireframing de aplicaciones",
+        "Optimización de experiencia de usuario (UX)",
+        "Diseño responsive para todos los dispositivos"
+      ]
+    },
+    "webdev": {
+      "title": "Desarrollo Web",
+      "features": [
+        "Desarrollo de aplicaciones web con React",
+        "APIs RESTful con Node.js y Express",
+        "Bases de datos MongoDB y PostgreSQL",
+        "Integración de servicios de terceros"
+      ]
+    },
+    "consulting": {
+      "title": "Consultoría Técnica",
+      "features": [
+        "Análisis y optimización de código existente",
+        "Arquitectura de software escalable",
+        "Implementación de mejores prácticas",
+        "Mentoría en tecnologías web"
+      ]
+    }
+  },
+  "portfolio": {
+    "subtitle": "Mi trabajo reciente",
+    "title": "Portfolio",
+    "github": "Github",
+    "demo": "Live Demo"
+  },
+  "contact": {
+    "subtitle": "Ponte en contacto",
+    "title": "Contáctame",
+    "email": "Email",
+    "messenger": "Messenger",
+    "whatsapp": "WhatsApp",
+    "sendMessage": "Enviar mensaje",
+    "form": {
+      "name": "Tu nombre completo",
+      "email": "Tu email",
+      "message": "Tu mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado correctamente! Te responderé pronto.",
+      "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo."
+    }
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "services": "Servicios",
+    "portfolio": "Portfolio",
+    "contact": "Contacto"
+  },
+  "portfolio": {
+    "subtitle": "Mi trabajo reciente",
+    "title": "Portfolio",
+    "github": "Github",
+    "demo": "Live Demo",
+    "titles": {
+      "cmc": "CMC Language",
+      "ofinita": "Ofinita",
+      "fundamental": "Fundamental LATAM",
+      "chaka": "Fundación Chaka",
+      "schujman": "Schujman",
+      "aybar": "Aybar Propiedades",
+      "henry": "Henry PEDI-VERY",
+      "pokemon": "Pokemon Project",
+      "tictactoe": "TIC-TAC-TOE",
+      "netflix": "Netflix-Clone"
+    },
+    "descriptions": {
+      "cmc": "Desarrollo completo del sitio web corporativo con sistema de gestión de cursos y plataforma de aprendizaje online.",
+      "ofinita": "Plataforma web para gestión de oficinas virtuales con sistema de reservas y administración de espacios.",
+      "fundamental": "Sitio web institucional con blog integrado y sistema de contacto para consultoría empresarial.",
+      "chaka": "Desarrollo de plataforma web para organización sin fines de lucro con sistema de donaciones.",
+      "schujman": "Sitio web profesional para estudio jurídico con sistema de citas online y gestión de casos.",
+      "aybar": "Portal inmobiliario completo con catálogo de propiedades, búsqueda avanzada y sistema de contacto.",
+      "henry": "Aplicación full-stack de delivery con React, Node.js y PostgreSQL. Sistema completo de pedidos y gestión.",
+      "pokemon": "Aplicación web interactiva con API de Pokémon, filtros avanzados y diseño responsive.",
+      "tictactoe": "Juego clásico de tres en raya desarrollado con JavaScript vanilla y diseño moderno.",
+      "netflix": "Clon de Netflix con React, incluyendo autenticación, catálogo de películas y sistema de favoritos."
+    }
+  }
+}

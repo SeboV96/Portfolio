@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/Sebastian-Villa-FullStack-1.1.docx'
+import CV from '../../assets/documents/Sebastian-Villa-FullStack-1.1.docx'
 
 const CTA = () => {
   return (

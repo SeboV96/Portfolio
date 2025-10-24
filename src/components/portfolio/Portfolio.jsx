@@ -1,40 +1,95 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import './portfolio.css'
-// import IMG1 from '../../assets/tiefling-brujo.jpg'
-import IMG2 from '../../assets/Pokeapp.jpg'
-import IMG3 from '../../assets/Screenshot_1.jpg'
-import IMG4 from '../../assets/netflix-clone.jpg'
+// import IMG1 from '../../assets/images/portfolio/tiefling-brujo.jpg'
+import IMG2 from '../../assets/images/portfolio/Pokeapp.jpg'
+import IMG3 from '../../assets/images/portfolio/Screenshot_1.jpg'
+import IMG4 from '../../assets/images/portfolio/netflix-clone.jpg'
 
 
 
 const Portfolio = () => {
+  const { t } = useTranslation()
 
   const data = [
     {
       id: 1,
-      image: "",
-      title: 'Henry PEDI-VERY',
+      image: IMG2,
+      title: t('portfolio.titles.cmc'),
+      description: t('portfolio.descriptions.cmc'),
+      github: '',
+      demo: "https://www.cmclanguage.com"
+    },
+    {
+      id: 2,
+      image: IMG3,
+      title: t('portfolio.titles.ofinita'),
+      description: t('portfolio.descriptions.ofinita'),
+      github: '',
+      demo: "https://www.ofinita.com"
+    },
+    {
+      id: 3,
+      image: IMG4,
+      title: t('portfolio.titles.fundamental'),
+      description: t('portfolio.descriptions.fundamental'),
+      github: '',
+      demo: "https://www.fundamentalatam.com"
+    },
+    {
+      id: 4,
+      image: IMG2,
+      title: t('portfolio.titles.chaka'),
+      description: t('portfolio.descriptions.chaka'),
+      github: '',
+      demo: "https://www.fundacionchaka.org"
+    },
+    {
+      id: 5,
+      image: IMG3,
+      title: t('portfolio.titles.schujman'),
+      description: t('portfolio.descriptions.schujman'),
+      github: '',
+      demo: "https://www.schujman.com"
+    },
+    {
+      id: 6,
+      image: IMG4,
+      title: t('portfolio.titles.aybar'),
+      description: t('portfolio.descriptions.aybar'),
+      github: '',
+      demo: "https://www.aybarpropiedades.com"
+    },
+    {
+      id: 7,
+      image: IMG2, // Imagen original de Pokemon
+      title: t('portfolio.titles.henry'),
+      description: t('portfolio.descriptions.henry'),
       github: 'https://github.com/SeboV96/PF_HENRY-PEDIVERY',
       demo: "https://pf-henry-plum.vercel.app"
     },
     {
-      id: 2,
-      image: IMG2,
-      title: 'Pokemon Project',
+      id: 8,
+      image: IMG2, // Imagen original de Pokemon
+      title: t('portfolio.titles.pokemon'),
+      description: t('portfolio.descriptions.pokemon'),
       github: "https://github.com/SeboV96/Pokemon-Project",
       demo: "https://pokemon-project-eight.vercel.app/"
     },
     {
-      id: 3,
-      image: IMG3,
-      title: 'TIC-TAC-TOE',
+      id: 9,
+      image: IMG3, // Imagen original de TIC-TAC-TOE
+      title: t('portfolio.titles.tictactoe'),
+      description: t('portfolio.descriptions.tictactoe'),
       github: "https://github.com/SeboV96/TIC-TAC-TOE",
       demo: "https://tic-tac-toe-one-ruddy.vercel.app"
     },
     {
-      id: 4,
-      image: IMG4,
-      title: 'Netflix-Clone',
+      id: 10,
+      image: IMG4, // Imagen original de Netflix-Clone
+      title: t('portfolio.titles.netflix'),
+      description: t('portfolio.descriptions.netflix'),
       github: "https://github.com/SeboV96/Netflix-clone",
       demo: "https://github.com/SeboV96/Netflix-clone"
     },
@@ -42,29 +97,35 @@ const Portfolio = () => {
 
   return (
     <section id='portfolio'>
-      <h5>My recent work</h5>
-      <h2>Portfolio</h2>
+      <h5>{t('portfolio.subtitle') || 'My recent work'}</h5>
+      <h2>{t('portfolio.title') || 'Portfolio'}</h2>
 
       <div className="container portfolio__container">
-
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, description, github, demo}, index) => {
             return (
-              <article key={id} className='portfolio__item'>
-        <div className="portfolio__item-image">
-          <img src={image} alt={title} />
-        </div>
-          <h3>{title}</h3>
-          <div className='portfolio__item-cta'>
-            <a href={github} className='btn' target='_blank'>Github</a>
-          <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-          
-        </article>
+              <motion.article 
+                key={id} 
+                className='portfolio__item'
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <p className='portfolio__description'>{description}</p>
+                <div className='portfolio__item-cta'>
+                  {github && <a href={github} className='btn' target='_blank' rel='noreferrer'>{t('portfolio.github') || 'Github'}</a>}
+                  <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>{t('portfolio.demo') || 'Live Demo'}</a>
+                </div>
+              </motion.article>
             )
           })
         }
-
       </div>
     </section>
   )
