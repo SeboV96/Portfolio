@@ -56,6 +56,14 @@ const Experience = () => {
               </div>
             </article>
 
+            <article className='experience__details'>
+              <BsFillPatchCheckFill className='experience__details-icon'/>
+              <div>
+              <h4>React Native</h4>
+              <small className='text-light'>{t('experience.intermediate')}</small>
+              </div>
+            </article>
+
           </div>
         </div>
 
@@ -98,8 +106,32 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
+              <h4>MySQL</h4>
+              <small className='text-light'>{t('experience.experienced')}</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsFillPatchCheckFill className='experience__details-icon'/>
+              <div>
+              <h4>PHP</h4>
+              <small className='text-light'>{t('experience.experienced')}</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsFillPatchCheckFill className='experience__details-icon'/>
+              <div>
+              <h4>Laravel</h4>
+              <small className='text-light'>{t('experience.experienced')}</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsFillPatchCheckFill className='experience__details-icon'/>
+              <div>
               <h4>Typescript</h4>
-              <small className='text-light'>{t('experience.comingSoon')}</small>
+              <small className='text-light'>{t('experience.intermediate')}</small>
               </div>
             </article>
             </div>

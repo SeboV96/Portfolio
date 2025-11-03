@@ -2,11 +2,14 @@ import React from 'react'
 import './footer.css'
 import {FaFacebookF, FaInstagram} from 'react-icons/fa'
 import {BsLinkedin} from 'react-icons/bs'
+import LOGO from '../../assets/images/logo/svilladev.png'
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>SVILLADEVELOPER</a>
+      <a href="#" className='footer__logo'>
+        <img src={LOGO} alt="SVilla Developer Logo" />
+      </a>
 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>

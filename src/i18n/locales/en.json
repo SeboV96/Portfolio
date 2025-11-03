@@ -62,7 +62,8 @@
     "subtitle": "My recent work",
     "title": "Portfolio",
     "github": "Github",
-    "demo": "Live Demo"
+    "demo": "Live Demo",
+    "goToSite": "Go to Site"
   },
   "contact": {
     "subtitle": "Get in Touch",
@@ -97,6 +98,7 @@
     "title": "Portfolio",
     "github": "Github",
     "demo": "Live Demo",
+    "goToSite": "Go to Site",
     "titles": {
       "cmc": "CMC Language",
       "ofinita": "Ofinita",
@@ -104,6 +106,7 @@
       "chaka": "Fundación Chaka",
       "schujman": "Schujman",
       "aybar": "Aybar Propiedades",
+      "coinxbet": "CoinXBet trafic SPA",
       "henry": "Henry PEDI-VERY",
       "pokemon": "Pokemon Project",
       "tictactoe": "TIC-TAC-TOE",
@@ -116,6 +119,7 @@
       "chaka": "Web platform development for non-profit organization with donation system.",
       "schujman": "Professional website for law firm with online appointment system and case management.",
       "aybar": "Complete real estate portal with property catalog, advanced search and contact system.",
+      "coinxbet": "SPA web application designed to generate traffic on social networks and redirect it to CoinXBet.net.",
       "henry": "Full-stack delivery application with React, Node.js and PostgreSQL. Complete order and management system.",
       "pokemon": "Interactive web application with Pokémon API, advanced filters and responsive design.",
       "tictactoe": "Classic tic-tac-toe game developed with vanilla JavaScript and modern design.",

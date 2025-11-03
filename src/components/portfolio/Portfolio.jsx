@@ -6,6 +6,13 @@ import './portfolio.css'
 import IMG2 from '../../assets/images/portfolio/Pokeapp.jpg'
 import IMG3 from '../../assets/images/portfolio/Screenshot_1.jpg'
 import IMG4 from '../../assets/images/portfolio/netflix-clone.jpg'
+import IMG_CMC from '../../assets/images/portfolio/cmclaguage.png'
+import IMG_OFINITA from '../../assets/images/portfolio/Ofinita.png'
+import IMG_FUNDAMENTAL from '../../assets/images/portfolio/Fundamental.png'
+import IMG_CHAKA from '../../assets/images/portfolio/Chaka.png'
+import IMG_SCHUJMAN from '../../assets/images/portfolio/Schujman.png'
+import IMG_AYBAR from '../../assets/images/portfolio/AybarPropiedades.png'
+import IMG_COINXBET from '../../assets/images/portfolio/CoinXBet.png'
 
 
 
@@ -14,8 +21,16 @@ const Portfolio = () => {
 
   const data = [
     {
+      id: 7,
+      image: IMG_COINXBET,
+      title: t('portfolio.titles.coinxbet'),
+      description: t('portfolio.descriptions.coinxbet'),
+      github: '',
+      demo: "https://cxbdev.vercel.app"
+    },
+    {
       id: 1,
-      image: IMG2,
+      image: IMG_CMC,
       title: t('portfolio.titles.cmc'),
       description: t('portfolio.descriptions.cmc'),
       github: '',
@@ -23,7 +38,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      image: IMG3,
+      image: IMG_OFINITA,
       title: t('portfolio.titles.ofinita'),
       description: t('portfolio.descriptions.ofinita'),
       github: '',
@@ -31,7 +46,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      image: IMG4,
+      image: IMG_FUNDAMENTAL,
       title: t('portfolio.titles.fundamental'),
       description: t('portfolio.descriptions.fundamental'),
       github: '',
@@ -39,7 +54,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      image: IMG2,
+      image: IMG_CHAKA,
       title: t('portfolio.titles.chaka'),
       description: t('portfolio.descriptions.chaka'),
       github: '',
@@ -47,7 +62,7 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      image: IMG3,
+      image: IMG_SCHUJMAN,
       title: t('portfolio.titles.schujman'),
       description: t('portfolio.descriptions.schujman'),
       github: '',
@@ -55,14 +70,14 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      image: IMG4,
+      image: IMG_AYBAR,
       title: t('portfolio.titles.aybar'),
       description: t('portfolio.descriptions.aybar'),
       github: '',
       demo: "https://www.aybarpropiedades.com"
     },
     {
-      id: 7,
+      id: 8,
       image: IMG2, // Imagen original de Pokemon
       title: t('portfolio.titles.henry'),
       description: t('portfolio.descriptions.henry'),
@@ -70,7 +85,7 @@ const Portfolio = () => {
       demo: "https://pf-henry-plum.vercel.app"
     },
     {
-      id: 8,
+      id: 9,
       image: IMG2, // Imagen original de Pokemon
       title: t('portfolio.titles.pokemon'),
       description: t('portfolio.descriptions.pokemon'),
@@ -78,7 +93,7 @@ const Portfolio = () => {
       demo: "https://pokemon-project-eight.vercel.app/"
     },
     {
-      id: 9,
+      id: 10,
       image: IMG3, // Imagen original de TIC-TAC-TOE
       title: t('portfolio.titles.tictactoe'),
       description: t('portfolio.descriptions.tictactoe'),
@@ -86,7 +101,7 @@ const Portfolio = () => {
       demo: "https://tic-tac-toe-one-ruddy.vercel.app"
     },
     {
-      id: 10,
+      id: 11,
       image: IMG4, // Imagen original de Netflix-Clone
       title: t('portfolio.titles.netflix'),
       description: t('portfolio.descriptions.netflix'),
@@ -120,7 +135,9 @@ const Portfolio = () => {
                 <p className='portfolio__description'>{description}</p>
                 <div className='portfolio__item-cta'>
                   {github && <a href={github} className='btn' target='_blank' rel='noreferrer'>{t('portfolio.github') || 'Github'}</a>}
-                  <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>{t('portfolio.demo') || 'Live Demo'}</a>
+                  <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>
+                    {id <= 7 ? (t('portfolio.goToSite') || 'Go to Site') : (t('portfolio.demo') || 'Live Demo')}
+                  </a>
                 </div>
               </motion.article>
             )

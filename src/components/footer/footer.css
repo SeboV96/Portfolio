@@ -17,6 +17,12 @@ footer a {
     display: inline-block;
 }
 
+.footer__logo img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
 .permalinks{
     display: flex;
     flex-wrap: wrap;

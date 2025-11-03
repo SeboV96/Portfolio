@@ -5,6 +5,7 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/images/me.png'
 import HeaderSocials from './HeaderSocials'
+import LOGO from '../../assets/images/logo/svilladev.png'
 
 const Header = () => {
   const { t } = useTranslation()
@@ -44,7 +45,10 @@ const Header = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <img src={ME} alt='me' />
+          <img src={ME} alt='me' className="me__image" />
+          <div className="me__logo">
+            <img src={LOGO} alt="SVilla Developer Logo" />
+          </div>
         </motion.div>
 
         <motion.a 
