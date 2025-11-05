@@ -1,7 +1,9 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import './portfolio.css'
+import { IoMdClose } from 'react-icons/io'
+import { FaExpand } from 'react-icons/fa'
 // import IMG1 from '../../assets/images/portfolio/tiefling-brujo.jpg'
 import IMG2 from '../../assets/images/portfolio/Pokeapp.jpg'
 import IMG3 from '../../assets/images/portfolio/Screenshot_1.jpg'
@@ -18,6 +20,24 @@ import IMG_COINXBET from '../../assets/images/portfolio/CoinXBet.png'
 
 const Portfolio = () => {
   const { t } = useTranslation()
+  const [selectedImage, setSelectedImage] = useState(null)
+
+  const getProjectKey = (id) => {
+    const keyMap = {
+      1: 'cmc',
+      2: 'ofinita',
+      3: 'fundamental',
+      4: 'chaka',
+      5: 'schujman',
+      6: 'aybar',
+      7: 'coinxbet',
+      8: 'henry',
+      9: 'pokemon',
+      10: 'tictactoe',
+      11: 'netflix'
+    }
+    return keyMap[id] || ''
+  }
 
   const data = [
     {
@@ -118,6 +138,11 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {
           data.map(({id, image, title, description, github, demo}, index) => {
+            const projectKey = getProjectKey(id)
+            const role = t(`portfolio.roles.${projectKey}`)
+            const technologies = t(`portfolio.technologiesList.${projectKey}`)
+            const impact = t(`portfolio.impacts.${projectKey}`)
+
             return (
               <motion.article 
                 key={id} 
@@ -126,13 +151,46 @@ const Portfolio = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
               >
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
+                  <button 
+                    className="portfolio__image-expand"
+                    onClick={() => setSelectedImage(image)}
+                    aria-label={t('portfolio.viewImage')}
+                  >
+                    <FaExpand />
+                  </button>
                 </div>
                 <h3>{title}</h3>
                 <p className='portfolio__description'>{description}</p>
+                
+                {role && (
+                  <div className='portfolio__detail'>
+                    <strong>{t('portfolio.role')}:</strong>
+                    <span>{role}</span>
+                  </div>
+                )}
+
+                {technologies && (
+                  <div className='portfolio__detail'>
+                    <strong>{t('portfolio.technologies')}:</strong>
+                    <div className='portfolio__tech-tags'>
+                      {technologies.split(', ').map((tech, idx) => (
+                        <span key={idx} className='portfolio__tech-tag'>{tech.trim()}</span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {impact && (
+                  <div className='portfolio__detail'>
+                    <strong>{t('portfolio.impact')}:</strong>
+                    <span>{impact}</span>
+                  </div>
+                )}
+
                 <div className='portfolio__item-cta'>
                   {github && <a href={github} className='btn' target='_blank' rel='noreferrer'>{t('portfolio.github') || 'Github'}</a>}
                   <a href={demo} className='btn btn-primary' target='_blank' rel='noreferrer'>
@@ -144,6 +202,36 @@ const Portfolio = () => {
           })
         }
       </div>
+
+      {/* Modal para imagen ampliada */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="portfolio__modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+          >
+            <motion.div
+              className="portfolio__modal-content"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                className="portfolio__modal-close"
+                onClick={() => setSelectedImage(null)}
+                aria-label="Cerrar"
+              >
+                <IoMdClose />
+              </button>
+              <img src={selectedImage} alt="Imagen ampliada del proyecto" />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }

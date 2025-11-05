@@ -46,6 +46,10 @@ const About = () => {
     {t('about.description')}
     </p>
 
+    <p className='about__personal-story'>
+    {t('about.personalStory')}
+    </p>
+
     <a href='#contact' className='btn btn-primary'>{t('about.cta')}</a>
     </div>
   </div>

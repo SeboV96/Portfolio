@@ -1,0 +1,116 @@
+.testimonials__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.testimonials__clients h3,
+.testimonials__collaboration h3 {
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.clients__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.client__card {
+    background: var(--color-bg-variant);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.client__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.client__logo {
+    margin-bottom: 1.5rem;
+}
+
+.client__logo h4 {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.client__description {
+    color: var(--color-light);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.client__testimonial {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-primary-variant);
+}
+
+.testimonial__quote {
+    color: var(--color-white);
+    font-style: italic;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    position: relative;
+}
+
+.testimonials__collaboration {
+    background: var(--color-bg-variant);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-primary-variant);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials__collaboration p {
+    color: var(--color-light);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.testimonials__collaboration .btn {
+    margin-top: 1rem;
+}
+
+/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen and (max-width: 1024px){
+    .testimonials__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .clients__grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
+@media screen and (max-width: 600px){
+    .clients__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .client__card {
+        padding: 1.5rem;
+    }
+
+    .testimonials__collaboration {
+        padding: 2rem 1.5rem;
+    }
+}
+

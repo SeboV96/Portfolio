@@ -4,7 +4,9 @@
     "greeting": "Hello! I'm",
     "name": "Sebastian Villa",
     "title": "Full Stack Developer",
-    "scrollDown": "Scroll Down"
+    "scrollDown": "Scroll Down",
+    "downloadCV": "Download CV",
+    "cta": "Want to build something together? Contact me →"
   },
   "about": {
     "subtitle": "Get To Know",
@@ -15,7 +17,8 @@
     "clientsText": "Happy clients",
     "projects": "Projects",
     "projectsText": "10+ completed projects",
-    "description": "I am a passionate Full Stack Developer with 2.5 years of professional experience, specializing in creating innovative digital solutions. Currently working as a Freelancer, I previously spent 1 year and 10 months at \"Compañía Digital\", where I was instrumental in developing the \"CD-System\" platform and collaborated on multiple web projects built with this system.\n\nMy expertise encompasses a comprehensive range of technologies including:\n• HTML5 • CSS3 • JavaScript (ES6+)\n• Node.js • MySQL • PostgreSQL • MongoDB\n• PHP • Laravel • React • React Native\n• Redux • Express.js • Bootstrap • Scrum methodologies\n\nAdditionally, I have extensive DevOps experience including:\n• Application deployment and server configuration\n• Domain management and DNS configuration\n• Server maintenance and monitoring\n• CI/CD pipeline implementation\n• Cloud infrastructure management\n\nI am passionate about leveraging technology to solve complex problems and create meaningful digital experiences. My experience in both frontend and backend development, combined with my DevOps skills and collaborative approach, allows me to deliver high-quality solutions that drive business success.\n\nI am always excited to take on new challenges and contribute to innovative projects that make a real difference in people's lives.",
+    "description": "I am a passionate Full Stack Developer with 2.5 years of professional experience, specializing in creating innovative digital solutions. Currently working as a Freelancer, I previously spent 1 year and 10 months at \"Compañía Digital\", where I was instrumental in developing the \"CD-System\" platform and collaborated on multiple web projects built with this system.\n\nMy expertise encompasses a comprehensive range of technologies including:\n• HTML5 • CSS3 • JavaScript (ES6+)\n• Node.js • MySQL • PostgreSQL • MongoDB\n• PHP • Laravel • React • React Native\n• Redux • Express.js • Bootstrap • Scrum methodologies\n\nAdditionally, I have extensive DevOps experience including:\n• Application deployment and server configuration\n• Domain management and DNS configuration\n• Server maintenance and monitoring\n• CI/CD pipeline implementation\n• Cloud infrastructure management",
+    "personalStory": "My mission as a developer goes beyond writing code. I firmly believe that technology should serve to solve real problems and improve people's lives. Every project I develop is an opportunity to create something with positive impact, whether it's facilitating business management, connecting people, or helping non-profit organizations achieve their goals.\n\nWhat motivates me most is continuous learning and the challenge of finding elegant solutions to complex problems. I particularly enjoy the process of transforming ideas into reality, working in teams and collaborating with clients to understand their needs and create solutions that truly add value.\n\nMy approach is based on quality, efficiency, and always keeping the end user at the center of every technical decision. I believe the best code is not only functional but also maintainable, scalable, and easy to understand.",
     "cta": "Let's Talk!"
   },
   "experience": {
@@ -82,6 +85,26 @@
       "error": "Error sending message. Please try again."
     }
   },
+  "testimonials": {
+    "subtitle": "I worked with",
+    "title": "Clients and Collaborations",
+    "clientsTitle": "Featured Clients",
+    "companiaDigital": {
+      "description": "Digital development company where I worked for 1 year and 10 months, developing the CD-System platform and multiple web projects.",
+      "testimonial": ""
+    },
+    "cmc": {
+      "description": "Complete corporate website development with course management system and online learning platform.",
+      "testimonial": ""
+    },
+    "ofinita": {
+      "description": "Web platform for virtual office management with reservation system and space administration.",
+      "testimonial": ""
+    },
+    "collaborationTitle": "Want to work together?",
+    "collaborationText": "I'm always open to new opportunities and interesting projects. If you have an idea or project in mind, let's talk!",
+    "cta": "Contact me"
+  },
   "footer": {
     "copyright": "All rights reserved."
   },
@@ -99,6 +122,10 @@
     "github": "Github",
     "demo": "Live Demo",
     "goToSite": "Go to Site",
+    "role": "Role",
+    "technologies": "Technologies",
+    "impact": "Impact",
+    "viewImage": "View enlarged image",
     "titles": {
       "cmc": "CMC Language",
       "ofinita": "Ofinita",
@@ -124,6 +151,45 @@
       "pokemon": "Interactive web application with Pokémon API, advanced filters and responsive design.",
       "tictactoe": "Classic tic-tac-toe game developed with vanilla JavaScript and modern design.",
       "netflix": "Netflix clone with React, including authentication, movie catalog and favorites system."
+    },
+    "roles": {
+      "cmc": "Full Stack Developer - Led complete project development from architecture to deployment.",
+      "ofinita": "Full Stack Developer - Complete platform development with reservation system integration.",
+      "fundamental": "Full Stack Developer - Design and development of institutional website with integrated blog.",
+      "chaka": "Full Stack Developer - Complete web platform development with donation system.",
+      "schujman": "Full Stack Developer - Tokko Broker API integration and frontend development.",
+      "aybar": "Full Stack Developer - Complete real estate portal development with advanced search.",
+      "coinxbet": "Frontend Developer - SPA development for social media traffic generation.",
+      "henry": "Full Stack Developer - Academic team project, responsible for backend and part of frontend.",
+      "pokemon": "Frontend Developer - Personal project for learning API consumption and advanced filters.",
+      "tictactoe": "Frontend Developer - Personal project developed with vanilla JavaScript for logic practice.",
+      "netflix": "Full Stack Developer - Personal project developed to learn React and state management."
+    },
+    "technologiesList": {
+      "cmc": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "ofinita": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "fundamental": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "chaka": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "schujman": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL, Tokko",
+      "aybar": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL, Tokko",
+      "coinxbet": "React Native, TypeScript, CSS3, HTML5",
+      "henry": "JavaScript, React, Node.js, Cloudinary, MongoDB, Mongoose",
+      "pokemon": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "tictactoe": "React, JavaScript, CSS3, HTML5",
+      "netflix": "React, JavaScript, CSS3, HTML5"
+    },
+    "impacts": {
+      "cmc": "Platform in production managing courses and active students. Improvement in administrative management and user experience.",
+      "ofinita": "System in production facilitating virtual office management and reservations.",
+      "fundamental": "Website in production improving the consultancy's online presence.",
+      "chaka": "Platform in production facilitating donations and organization management.",
+      "schujman": "Website in production with real-time property integration from Tokko Broker.",
+      "aybar": "Portal in production improving property visibility and inquiry conversion.",
+      "coinxbet": "SPA in production generating targeted traffic to CoinXBet.net.",
+      "henry": "Complete academic project demonstrating full-stack skills with functional order system.",
+      "pokemon": "Personal project demonstrating API consumption skills and responsive design.",
+      "tictactoe": "Personal project demonstrating vanilla JavaScript skills and programming logic.",
+      "netflix": "Personal project demonstrating React skills and state management."
     }
   }
 }

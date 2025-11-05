@@ -3,7 +3,9 @@
     "greeting": "¡Hola! Soy",
     "name": "Sebastian Villa",
     "title": "Desarrollador Full Stack",
-    "scrollDown": "Desplázate hacia abajo"
+    "scrollDown": "Desplázate hacia abajo",
+    "downloadCV": "Descargar CV",
+    "cta": "¿Querés construir algo juntos? Contactame →"
   },
   "about": {
     "subtitle": "Conóceme",
@@ -14,7 +16,8 @@
     "clientsText": "Clientes contentos",
     "projects": "Proyectos",
     "projectsText": "10+ proyectos completados",
-    "description": "Soy un Desarrollador Full Stack apasionado con 2.5 años de experiencia profesional, especializado en crear soluciones digitales innovadoras. Actualmente trabajo como Freelancer, anteriormente pasé 1 año y 10 meses en \"Compañía Digital\", donde fui fundamental en el desarrollo de la plataforma \"CD-System\" y colaboré en múltiples proyectos web construidos con dicho sistema.\n\nMi experiencia abarca un amplio rango de tecnologías incluyendo:\n• HTML5 • CSS3 • JavaScript (ES6+)\n• Node.js • MySQL • PostgreSQL • MongoDB\n• PHP • Laravel • React • React Native\n• Redux • Express.js • Bootstrap • Metodologías Scrum\n\nAdicionalmente, tengo amplia experiencia en DevOps incluyendo:\n• Despliegue de aplicaciones y configuración de servidores\n• Gestión de dominios y configuración DNS\n• Mantenimiento y monitoreo de servidores\n• Implementación de pipelines CI/CD\n• Gestión de infraestructura en la nube\n\nSoy apasionado por aprovechar la tecnología para resolver problemas complejos y crear experiencias digitales significativas. Mi experiencia tanto en desarrollo frontend como backend, combinada con mis habilidades DevOps y enfoque colaborativo, me permite entregar soluciones de alta calidad que impulsan el éxito empresarial.\n\nSiempre estoy emocionado por asumir nuevos desafíos y contribuir a proyectos innovadores que marquen una diferencia real en la vida de las personas.",
+    "description": "Soy un Desarrollador Full Stack apasionado con 2.5 años de experiencia profesional, especializado en crear soluciones digitales innovadoras. Actualmente trabajo como Freelancer, anteriormente pasé 1 año y 10 meses en \"Compañía Digital\", donde fui fundamental en el desarrollo de la plataforma \"CD-System\" y colaboré en múltiples proyectos web construidos con dicho sistema.\n\nMi experiencia abarca un amplio rango de tecnologías incluyendo:\n• HTML5 • CSS3 • JavaScript (ES6+)\n• Node.js • MySQL • PostgreSQL • MongoDB\n• PHP • Laravel • React • React Native\n• Redux • Express.js • Bootstrap • Metodologías Scrum\n\nAdicionalmente, tengo amplia experiencia en DevOps incluyendo:\n• Despliegue de aplicaciones y configuración de servidores\n• Gestión de dominios y configuración DNS\n• Mantenimiento y monitoreo de servidores\n• Implementación de pipelines CI/CD\n• Gestión de infraestructura en la nube",
+    "personalStory": "Mi misión como desarrollador va más allá de escribir código. Creo firmemente que la tecnología debe servir para resolver problemas reales y mejorar la vida de las personas. Cada proyecto que desarrollo es una oportunidad para crear algo que tenga impacto positivo, ya sea facilitando la gestión de una empresa, conectando a las personas, o ayudando a organizaciones sin fines de lucro a alcanzar sus objetivos.\n\nLo que más me motiva es el aprendizaje continuo y el desafío de encontrar soluciones elegantes a problemas complejos. Disfruto especialmente del proceso de transformar ideas en realidad, trabajando en equipo y colaborando con clientes para entender sus necesidades y crear soluciones que realmente agreguen valor.\n\nMi enfoque se basa en la calidad, la eficiencia y siempre mantener al usuario final en el centro de cada decisión técnica. Creo que el mejor código es aquel que no solo funciona, sino que es mantenible, escalable y fácil de entender.",
     "cta": "¡Hablemos!"
   },
   "experience": {
@@ -81,6 +84,26 @@
       "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo."
     }
   },
+  "testimonials": {
+    "subtitle": "Trabajé con",
+    "title": "Clientes y Colaboraciones",
+    "clientsTitle": "Clientes Destacados",
+    "companiaDigital": {
+      "description": "Empresa de desarrollo digital donde trabajé durante 1 año y 10 meses, desarrollando la plataforma CD-System y múltiples proyectos web.",
+      "testimonial": ""
+    },
+    "cmc": {
+      "description": "Desarrollo completo del sitio web corporativo con sistema de gestión de cursos y plataforma de aprendizaje online.",
+      "testimonial": ""
+    },
+    "ofinita": {
+      "description": "Plataforma web para gestión de oficinas virtuales con sistema de reservas y administración de espacios.",
+      "testimonial": ""
+    },
+    "collaborationTitle": "¿Querés trabajar juntos?",
+    "collaborationText": "Estoy siempre abierto a nuevas oportunidades y proyectos interesantes. Si tenés una idea o proyecto en mente, ¡hablemos!",
+    "cta": "Contactame"
+  },
   "footer": {
     "copyright": "Todos los derechos reservados."
   },
@@ -98,6 +121,10 @@
     "github": "Github",
     "demo": "Live Demo",
     "goToSite": "Ir al Sitio",
+    "role": "Rol",
+    "technologies": "Tecnologías",
+    "impact": "Impacto",
+    "viewImage": "Ver imagen ampliada",
     "titles": {
       "cmc": "CMC Language",
       "ofinita": "Ofinita",
@@ -123,6 +150,45 @@
       "pokemon": "Aplicación web interactiva con API de Pokémon, filtros avanzados y diseño responsive.",
       "tictactoe": "Juego clásico de tres en raya desarrollado con JavaScript vanilla y diseño moderno.",
       "netflix": "Clon de Netflix con React, incluyendo autenticación, catálogo de películas y sistema de favoritos."
+    },
+    "roles": {
+      "cmc": "Desarrollador Full Stack - Lideré el desarrollo completo del proyecto desde la arquitectura hasta el despliegue.",
+      "ofinita": "Desarrollador Full Stack - Desarrollo completo de la plataforma con integración de sistemas de reservas.",
+      "fundamental": "Desarrollador Full Stack - Diseño y desarrollo del sitio web institucional con blog integrado.",
+      "chaka": "Desarrollador Full Stack - Desarrollo de la plataforma web completa con sistema de donaciones.",
+      "schujman": "Desarrollador Full Stack - Integración con API de Tokko Broker y desarrollo del frontend.",
+      "aybar": "Desarrollador Full Stack - Desarrollo del portal inmobiliario completo con búsqueda avanzada.",
+      "coinxbet": "Desarrollador Frontend - Desarrollo de SPA para generación de tráfico en redes sociales.",
+      "henry": "Desarrollador Full Stack - Proyecto académico desarrollado en equipo, fui responsable del backend y parte del frontend.",
+      "pokemon": "Desarrollador Frontend - Proyecto personal para aprendizaje de consumo de APIs y filtros avanzados.",
+      "tictactoe": "Desarrollador Frontend - Proyecto personal desarrollado con JavaScript vanilla para práctica de lógica.",
+      "netflix": "Desarrollador Full Stack - Proyecto personal desarrollado para aprender React y gestión de estado."
+    },
+    "technologiesList": {
+      "cmc": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "ofinita": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "fundamental": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "chaka": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "schujman": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL, Tokko",
+      "aybar": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL, Tokko",
+      "coinxbet": "React Native, TypeScript, CSS3, HTML5",
+      "henry": "JavaScript, React, Node.js, Cloudinary, MongoDB, Mongoose",
+      "pokemon": "Laravel, PHP, JavaScript, Node.js, Cloudinary, MySQL",
+      "tictactoe": "React, JavaScript, CSS3, HTML5",
+      "netflix": "React, JavaScript, CSS3, HTML5"
+    },
+    "impacts": {
+      "cmc": "Plataforma en producción gestionando cursos y estudiantes activos. Mejora en la gestión administrativa y experiencia del usuario.",
+      "ofinita": "Sistema en producción facilitando la gestión de oficinas virtuales y reservas.",
+      "fundamental": "Sitio web en producción mejorando la presencia online de la consultoría.",
+      "chaka": "Plataforma en producción facilitando donaciones y gestión de la organización.",
+      "schujman": "Sitio web en producción con integración en tiempo real de propiedades desde Tokko Broker.",
+      "aybar": "Portal en producción mejorando la visibilidad de propiedades y conversión de consultas.",
+      "coinxbet": "SPA en producción generando tráfico dirigido hacia CoinXBet.net.",
+      "henry": "Proyecto académico completo demostrando habilidades full-stack con sistema de pedidos funcional.",
+      "pokemon": "Proyecto personal demostrando habilidades en consumo de APIs y diseño responsive.",
+      "tictactoe": "Proyecto personal demostrando habilidades en JavaScript vanilla y lógica de programación.",
+      "netflix": "Proyecto personal demostrando habilidades en React y gestión de estado."
     }
   }
 }

@@ -6,23 +6,25 @@ const SEO = () => {
     <Helmet>
       {/* Meta tags básicos */}
       <title>Sebastian Villa - Full Stack Developer | Portfolio</title>
-      <meta name="description" content="Desarrollador Full Stack apasionado por la tecnología. Especializado en React, Node.js, MongoDB y más. ¡Conectemos y creemos algo increíble juntos!" />
-      <meta name="keywords" content="desarrollador full stack, react, nodejs, javascript, portfolio, web development, mongodb, express" />
+      <meta name="description" content="Desarrollador Full Stack con 2.5 años de experiencia. Especializado en React, Node.js, PHP, Laravel, MongoDB y PostgreSQL. Desarrollo de soluciones web innovadoras, plataformas de gestión y aplicaciones full-stack. ¡Conectemos y creemos algo increíble juntos!" />
+      <meta name="keywords" content="desarrollador full stack, react, nodejs, javascript, php, laravel, mongodb, postgresql, express, portfolio, web development, desarrollo web, freelancer, argentina" />
       <meta name="author" content="Sebastian Villa" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://sebastianvilla.dev/" />
-      <meta property="og:title" content="Sebastian Villa - Full Stack Developer" />
-      <meta property="og:description" content="Desarrollador Full Stack apasionado por la tecnología. Especializado en React, Node.js, MongoDB y más." />
+      <meta property="og:title" content="Sebastian Villa - Full Stack Developer | Portfolio" />
+      <meta property="og:description" content="Desarrollador Full Stack con 2.5 años de experiencia. Especializado en React, Node.js, PHP, Laravel, MongoDB y PostgreSQL. Desarrollo de soluciones web innovadoras." />
       <meta property="og:image" content="https://sebastianvilla.dev/og-image.jpg" />
+      <meta property="og:locale" content="es_ES" />
+      <meta property="og:locale:alternate" content="en_US" />
       
       {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://sebastianvilla.dev/" />
-      <meta property="twitter:title" content="Sebastian Villa - Full Stack Developer" />
-      <meta property="twitter:description" content="Desarrollador Full Stack apasionado por la tecnología. Especializado en React, Node.js, MongoDB y más." />
-      <meta property="twitter:image" content="https://sebastianvilla.dev/og-image.jpg" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content="https://sebastianvilla.dev/" />
+      <meta name="twitter:title" content="Sebastian Villa - Full Stack Developer | Portfolio" />
+      <meta name="twitter:description" content="Desarrollador Full Stack con 2.5 años de experiencia. Especializado en React, Node.js, PHP, Laravel, MongoDB y PostgreSQL." />
+      <meta name="twitter:image" content="https://sebastianvilla.dev/og-image.jpg" />
       
       {/* Canonical URL */}
       <link rel="canonical" href="https://sebastianvilla.dev/" />

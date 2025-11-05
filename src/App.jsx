@@ -11,6 +11,7 @@ import Experience from './components/experience/Experience'
 import Footer from './components/footer/Footer'
 import Portfolio from './components/portfolio/Portfolio'
 import Services from './components/services/Services'
+import Testimonials from './components/testimonials/Testimonials'
 import SEO from './components/seo/SEO'
 import Toggle from './components/theme/Toggle'
 import LanguageSelector from './components/language/LanguageSelector'
@@ -29,6 +30,7 @@ export const App = () => {
           <Experience/>
           <Services/>
           <Portfolio/>
+          <Testimonials/>
           <Contact/>
           <Footer/>
         </ThemeProvider>

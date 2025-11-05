@@ -61,8 +61,18 @@
 }
 
 .about__content p {
-margin: 2rem 0 2.6rem;
+margin: 2rem 0 1.5rem;
 color: var(--color-light);
+line-height: 1.8;
+}
+
+.about__personal-story {
+margin: 1.5rem 0 2.6rem !important;
+color: var(--color-light);
+line-height: 1.8;
+font-style: italic;
+border-left: 3px solid var(--color-primary);
+padding-left: 1.5rem;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
