@@ -65,7 +65,8 @@ const LanguageSelector = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                EN
+                <span className="flag">🇬🇧</span>
+                <span>EN</span>
               </motion.button>
               <motion.button
                 className={`language-option ${i18n.language === 'es' ? 'active' : ''}`}
@@ -73,7 +74,8 @@ const LanguageSelector = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                ES
+                <span className="flag">🇪🇸</span>
+                <span>ES</span>
               </motion.button>
             </motion.div>
           )}
