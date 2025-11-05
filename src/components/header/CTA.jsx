@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
+import { FaFileWord, FaFilePdf } from 'react-icons/fa'
 import CV_WORD from '../../assets/documents/Sebastian-Villa-FullStack.docx'
 import CV_PDF from '../../assets/documents/Sebastian-Villa-FullStack.docx.pdf'
 
@@ -43,10 +44,12 @@ const CTA = () => {
              exit={{ opacity: 0, y: -10 }}
            >
              <a href={CV_WORD} download className='cta__dropdown-item'>
-               Word
+               <FaFileWord className='cta__dropdown-icon' />
+               <span>Word</span>
              </a>
              <a href={CV_PDF} download className='cta__dropdown-item'>
-               PDF
+               <FaFilePdf className='cta__dropdown-icon' />
+               <span>PDF</span>
              </a>
            </motion.div>
          )}
